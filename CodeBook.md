@@ -2,79 +2,17 @@
 
 This code book summarizes the resulting data fields in `tidy.txt`.
 
-## Identifiers
+## Variables
 
-* `subject` - The ID of the test subject
-* `activity` - The type of activity performed when the corresponding measurements were taken
+* `Subject` - The ID of the test subject
+* `Activity` - The type of activity performed when the corresponding measurements were taken
+* `Domain` - It indicates the domain of the mearurements whether it is Time or Frequency
+* `MeasureType` - These are the various measurement parameters like 'BodyAcceleration', 'BodyAngularSpeed' etc.
+* `Axis` - The Axis of the measurement, It will be either X,Y,Z. Some mearurements doesn't have the axis which will be kept as sempty.
+* `Mean` - Mean of the mearurements for the subject for a corresponding activity.
+* `StandardDeviation` - Standard deviation of the mearurements for the subject for a corresponding activity
 
-## Measurements
 
-* `TimeDomain.BodyAcceleration.Mean...X`
-* `TimeDomain.BodyAcceleration.Mean...Y`
-* `TimeDomain.BodyAcceleration.Mean...Z`
-* `TimeDomain.BodyAcceleration.StandardDeviation...X`
-* `TimeDomain.BodyAcceleration.StandardDeviation...Y`
-* `TimeDomain.BodyAcceleration.StandardDeviation...Z`
-* `TimeDomain.GravityAcceleration.Mean...X`
-* `TimeDomain.GravityAcceleration.Mean...Y`
-* `TimeDomain.GravityAcceleration.Mean...Z`
-* `TimeDomain.GravityAcceleration.StandardDeviation...X`
-* `TimeDomain.GravityAcceleration.StandardDeviation...Y`
-* `TimeDomain.GravityAcceleration.StandardDeviation...Z`
-* `TimeDomain.BodyAccelerationJerk.Mean...X`
-* `TimeDomain.BodyAccelerationJerk.Mean...Y`
-* `TimeDomain.BodyAccelerationJerk.Mean...Z`
-* `TimeDomain.BodyAccelerationJerk.StandardDeviation...X`
-* `TimeDomain.BodyAccelerationJerk.StandardDeviation...Y`
-* `TimeDomain.BodyAccelerationJerk.StandardDeviation...Z`
-* `TimeDomain.BodyAngularSpeed.Mean...X`
-* `TimeDomain.BodyAngularSpeed.Mean...Y`
-* `TimeDomain.BodyAngularSpeed.Mean...Z`
-* `TimeDomain.BodyAngularSpeed.StandardDeviation...X`
-* `TimeDomain.BodyAngularSpeed.StandardDeviation...Y`
-* `TimeDomain.BodyAngularSpeed.StandardDeviation...Z`
-* `TimeDomain.BodyAngularAcceleration.Mean...X`
-* `TimeDomain.BodyAngularAcceleration.Mean...Y`
-* `TimeDomain.BodyAngularAcceleration.Mean...Z`
-* `TimeDomain.BodyAngularAcceleration.StandardDeviation...X`
-* `TimeDomain.BodyAngularAcceleration.StandardDeviation...Y`
-* `TimeDomain.BodyAngularAcceleration.StandardDeviation...Z`
-* `TimeDomain.BodyAccelerationMagnitude.Mean..`
-* `TimeDomain.BodyAccelerationMagnitude.StandardDeviation..`
-* `TimeDomain.GravityAccelerationMagnitude.Mean..`
-* `TimeDomain.GravityAccelerationMagnitude.StandardDeviation..`
-* `TimeDomain.BodyAccelerationJerkMagnitude.Mean..`
-* `TimeDomain.BodyAccelerationJerkMagnitude.StandardDeviation..`
-* `TimeDomain.BodyAngularSpeedMagnitude.Mean..`
-* `TimeDomain.BodyAngularSpeedMagnitude.StandardDeviation..`
-* `TimeDomain.BodyAngularAccelerationMagnitude.Mean..`
-* `TimeDomain.BodyAngularAccelerationMagnitude.StandardDeviation..`
-* `FrequencyDomain.BodyAcceleration.Mean...X`
-* `FrequencyDomain.BodyAcceleration.Mean...Y`
-* `FrequencyDomain.BodyAcceleration.Mean...Z`
-* `FrequencyDomain.BodyAcceleration.StandardDeviation...X`
-* `FrequencyDomain.BodyAcceleration.StandardDeviation...Y`
-* `FrequencyDomain.BodyAcceleration.StandardDeviation...Z`
-* `FrequencyDomain.BodyAccelerationJerk.Mean...X`
-* `FrequencyDomain.BodyAccelerationJerk.Mean...Y`
-* `FrequencyDomain.BodyAccelerationJerk.Mean...Z`
-* `FrequencyDomain.BodyAccelerationJerk.StandardDeviation...X`
-* `FrequencyDomain.BodyAccelerationJerk.StandardDeviation...Y`
-* `FrequencyDomain.BodyAccelerationJerk.StandardDeviation...Z`
-* `FrequencyDomain.BodyAngularSpeed.Mean...X`
-* `FrequencyDomain.BodyAngularSpeed.Mean...Y`
-* `FrequencyDomain.BodyAngularSpeed.Mean...Z`
-* `FrequencyDomain.BodyAngularSpeed.StandardDeviation...X`
-* `FrequencyDomain.BodyAngularSpeed.StandardDeviation...Y`
-* `FrequencyDomain.BodyAngularSpeed.StandardDeviation...Z`
-* `FrequencyDomain.BodyAccelerationMagnitude.Mean..`
-* `FrequencyDomain.BodyAccelerationMagnitude.StandardDeviation..`
-* `FrequencyDomain.BodyBodyAccelerationJerkMagnitude.Mean..`
-* `FrequencyDomain.BodyBodyAccelerationJerkMagnitude.StandardDeviation..`
-* `FrequencyDomain.BodyBodyAngularSpeedMagnitude.Mean..`
-* `FrequencyDomain.BodyBodyAngularSpeedMagnitude.StandardDeviation..`
-* `FrequencyDomain.BodyBodyAngularAccelerationMagnitude.Mean..`
-* `FrequencyDomain.BodyBodyAngularAccelerationMagnitude.StandardDeviation..`
 
 ## Activity Labels
 

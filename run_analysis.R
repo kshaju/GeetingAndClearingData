@@ -48,10 +48,15 @@ names(singleDataSet) <- gsub('\\.std',".StandardDeviation",names(singleDataSet))
 names(singleDataSet) <- gsub('Freq\\.',"Frequency.",names(singleDataSet))
 names(singleDataSet) <- gsub('Freq$',"Frequency",names(singleDataSet))
 
+
 ## 5. Creates a second, independent tidy data set with the average of each variable for each 
 ##    activity and each subject
 
 FinalTData <-aggregate(. ~Subject + Activity, singleDataSet, mean)
 FinalTData<-FinalTData[order(FinalTData$Subject,FinalTData$Activity),]
-write.table(FinalTData, file = "tidy.txt",row.name=FALSE)
+FinalTDataGather<- gather(FinalTData, key="Domain.MeasureType.ValueType...Axis", value = "Value", TimeDomain.BodyAcceleration.Mean...X:FrequencyDomain.BodyBodyAngularAccelerationMagnitude.StandardDeviation..)
+tidydfinal <- separate(FinalTDataGather, Domain.MeasureType.ValueType...Axis, c("Domain","MeasureType","ValueType","Axis"))
+tidydfinal<- spread(data=tidydfinal, ValueType, Value)
+
+write.table(tidydfinal, file = "tidy.txt",row.name=FALSE)
 
