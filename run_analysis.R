@@ -1,4 +1,6 @@
 library(plyr)
+library(dplyr)
+library(tidyr)
 library(data.table)
 
 ## 1. Get and merge the data
